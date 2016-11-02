@@ -1,6 +1,7 @@
 # frozen_string_literal: true
-require 'assertioons/maybe'
-require 'assertioons/either'
+require 'dry-monads'
+require_relative 'assertions/maybe'
+require_relative 'assertions/either'
 module Minitest
   module Dry
     module Monads

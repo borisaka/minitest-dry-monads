@@ -22,7 +22,11 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.13'
   spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_dependency 'minitest', '~> 5.9'
-  spec.add_dependency 'dry-system', '~> 0.5.1'
-  spec.add_dependency 'inflecto', '~> 0.2'
+  spec.add_development_dependency 'pry', '~> 0.10.4'
+  spec.add_development_dependency 'pry-rescue', '~> 1.4.4'
+  spec.add_development_dependency 'pry-stack_explorer', '~> 0.4.9'
+  spec.add_development_dependency 'pry-state', '~> 0.1.7'
+
+  spec.add_runtime_dependency 'minitest', '~> 5.9'
+  spec.add_runtime_dependency 'dry-monads', '~> 0.2.0'
 end

@@ -1,11 +1,11 @@
+# frozen_string_literal: true
 require 'test_helper'
-
-class Minitest::Dry::MonadsTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::Minitest::Dry::Monads::VERSION
-  end
-
-  def test_it_does_something_useful
-    assert false
+module Minitest
+  module Dry
+    class MonadsTest < Minitest::Test
+      def test_that_it_has_a_version_number
+        assert_equal Minitest::Dry::Monads::VERSION, '0.0.0'
+      end
+    end
   end
 end
